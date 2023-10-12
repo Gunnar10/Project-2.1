@@ -258,7 +258,7 @@ g <- ggplot(data = allteamTotals, aes(x= gameWinPctg))
 g + geom_boxplot(outlier.colour = "red") + labs(x = "Win Percentage", title = "Box Plot of Regular Season Win Percentages")
 ```
 
-![](README_files/figure-gfm/boxplot1-1.png)<!-- -->
+![](Project-2.1_files/figure-gfm/boxplot1-1.png)<!-- -->
 
 Here is a box plot to show the spread of the average number of wins for
 each team.
@@ -271,7 +271,7 @@ g <- ggplot(data = wByTeam, aes(x= avgWins))
 g + geom_boxplot(outlier.colour = "red") + labs(x = "Average Wins", title = "Box Plot of the Average Number of Wins of Each Team")
 ```
 
-![](README_files/figure-gfm/boxplot2-1.png)<!-- -->
+![](Project-2.1_files/figure-gfm/boxplot2-1.png)<!-- -->
 
 Below are line graphs of the win percentages for the top 5 teams and the
 Carolina Hurricanes by the years.
@@ -285,7 +285,7 @@ g + geom_line(color = "darkseagreen", size = 1.2) + geom_point(color = "darkslat
         scale_linetype_manual(name = "Average Win Percentage", values = c(1,2), guide = guide_legend(override.aes = list(color = c("red", "purple"))))
 ```
 
-![](README_files/figure-gfm/graphs-1.png)<!-- -->
+![](Project-2.1_files/figure-gfm/graphs-1.png)<!-- -->
 
 ``` r
 g <- ggplot(data = coloradoAvalanche, aes(x = year, y = winPctg))
@@ -296,7 +296,7 @@ g + geom_line(color = "darkseagreen", size = 1.2) + geom_point(color = "darkslat
         scale_linetype_manual(name = "Average Win Percentage", values = c(1,2), guide = guide_legend(override.aes = list(color = c("red", "purple"))))
 ```
 
-![](README_files/figure-gfm/graphs-2.png)<!-- -->
+![](Project-2.1_files/figure-gfm/graphs-2.png)<!-- -->
 
 ``` r
 g <- ggplot(data = dallasStars, aes(x = year, y = winPctg))
@@ -307,7 +307,7 @@ g + geom_line(color = "darkseagreen", size = 1.2) + geom_point(color = "darkslat
         scale_linetype_manual(name = "Average Win Percentage", values = c(1,2), guide = guide_legend(override.aes = list(color = c("red", "purple"))))
 ```
 
-![](README_files/figure-gfm/graphs-3.png)<!-- -->
+![](Project-2.1_files/figure-gfm/graphs-3.png)<!-- -->
 
 ``` r
 g <- ggplot(data = winnipegJets, aes(x = year, y = winPctg))
@@ -318,7 +318,7 @@ g + geom_line(color = "darkseagreen", size = 1.2) + geom_point(color = "darkslat
         scale_linetype_manual(name = "Average Win Percentage", values = c(1,2), guide = guide_legend(override.aes = list(color = c("red", "purple"))))
 ```
 
-![](README_files/figure-gfm/graphs-4.png)<!-- -->
+![](Project-2.1_files/figure-gfm/graphs-4.png)<!-- -->
 
 ``` r
 g <- ggplot(data = montrealCanadiens, aes(x = year, y = winPctg))
@@ -329,7 +329,7 @@ g + geom_line(color = "darkseagreen", size = 1.2) + geom_point(color = "darkslat
   scale_linetype_manual(name = "Average Win Percentage", values = c(1,2), guide = guide_legend(override.aes = list(color = c("red", "purple"))))
 ```
 
-![](README_files/figure-gfm/graphs-5.png)<!-- -->
+![](Project-2.1_files/figure-gfm/graphs-5.png)<!-- -->
 
 ``` r
 g <- ggplot(data = carolinaHurricanes, aes(x = year, y = winPctg))
@@ -340,7 +340,7 @@ g + geom_line(color = "darkseagreen", size = 1.2) + geom_point(color = "darkslat
   scale_linetype_manual(name = "Average Win Percentage", values = c(1,2), guide = guide_legend(override.aes = list(color = c("red", "purple"))))
 ```
 
-![](README_files/figure-gfm/graphs-6.png)<!-- -->
+![](Project-2.1_files/figure-gfm/graphs-6.png)<!-- -->
 
 From these line graphs and the contingency table,of the teams and the
 cups they have won, we can determine the Montreal Canadians seem to be
@@ -363,7 +363,7 @@ g <- ggplot(data = data, aes(x= teamId, y = seasonId, fill = wins))
   g + geom_tile()
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](Project-2.1_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
 # Take Aways
 
